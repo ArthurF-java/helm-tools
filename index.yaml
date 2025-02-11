@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  postgresql:
+  - apiVersion: v2
+    appVersion: "14.5"
+    created: "2025-02-11T22:25:37.168970129+03:00"
+    description: A Helm chart for deploying PostgreSQL on Kubernetes
+    digest: 7a8d31ac63ca595701caf56d294cc142beb71e1f3d29b092a5601e832a0dd960
+    name: postgresql
+    urls:
+    - https://arthurf-java.github.io/helm-tools/postgresql14.5/postgresql-14.5.tgz
+    version: "14.5"
+generated: "2025-02-11T22:25:37.168311206+03:00"
