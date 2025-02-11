@@ -1,0 +1,18 @@
+{{- if .Values.persistence.enabled }}
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ include "postgresql.fullname" . }}-{{ .Values.namespace }}-pvc
+  namespace: {{ .Values.namespace }}
+  labels:
+    {{- include "postgresql.labels" . | nindent 4 }}
+  annotations:
+    nfs.io/storage-path: {{ .Values.namespace }}
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: {{ .Values.persistence.size }}
+  storageClassName: nfs-{{ .Values.namespace }}
+{{- end }}

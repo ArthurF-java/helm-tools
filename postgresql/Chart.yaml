@@ -1,0 +1,5 @@
+apiVersion: v2
+name: postgresql
+description: A Helm chart for deploying PostgreSQL on Kubernetes
+version: 14.5
+appVersion: "14.5"
