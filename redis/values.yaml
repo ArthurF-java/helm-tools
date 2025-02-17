@@ -1,0 +1,36 @@
+# custom-redis/values.yaml
+
+image:
+  repository: redis
+  tag: "6.2.6"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 6379
+
+ingress:
+  enabled: false
+
+resources:
+  requests:
+    memory: "256Mi"
+    cpu: "250m"
+  limits:
+    memory: "512Mi"
+    cpu: "500m"
+
+persistence:
+  enabled: true
+  storageClass: "redis-pv"
+  accessModes:
+    - ReadWriteOnce
+  size: "1Gi"
+
+replicaCount: 1
+
+config:
+  maxmemory: "512mb"
+  maxmemoryPolicy: "allkeys-lru"
+
+namespace: env

@@ -3,7 +3,7 @@ entries:
   postgresql:
   - apiVersion: v2
     appVersion: "14.5"
-    created: "2025-02-17T13:02:10.608442474+03:00"
+    created: "2025-02-17T20:34:18.258838748+03:00"
     description: A Helm chart for deploying PostgreSQL on Kubernetes
     digest: 7a8d31ac63ca595701caf56d294cc142beb71e1f3d29b092a5601e832a0dd960
     name: postgresql
@@ -12,11 +12,21 @@ entries:
     version: "14.5"
   - apiVersion: v2
     appVersion: "14.5"
-    created: "2025-02-17T13:02:10.607522554+03:00"
+    created: "2025-02-17T20:34:18.257096092+03:00"
     description: A Helm chart for deploying PostgreSQL on Kubernetes
     digest: 40476624c20c0476e878b346f403a62700c45755edaf87cfcd562c4ec7cd8cf7
     name: postgresql
     urls:
     - https://arthurf-java.github.io/helm-tools/postgresql-14.5-config-map.tgz
     version: 14.5-config-map
-generated: "2025-02-17T13:02:10.607156518+03:00"
+  redis:
+  - apiVersion: v2
+    appVersion: 6.2.6
+    created: "2025-02-17T20:34:18.257939897+03:00"
+    description: A Helm chart for deploying Redis
+    digest: 4f067bbc59431e0469f8193506a3cb23c5b1a0a9c84f828bf308b344e87aea83
+    name: redis
+    urls:
+    - https://arthurf-java.github.io/helm-tools/redis-6.2.6.tgz
+    version: 6.2.6
+generated: "2025-02-17T20:34:18.256083218+03:00"
